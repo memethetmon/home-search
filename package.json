@@ -1,0 +1,25 @@
+{
+  "name": "home-search",
+  "version": "1.0.0",
+  "description": "A simple home address search that returns matching houses from a large set of houses",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/memethetmon/home-search.git"
+  },
+  "author": "Me Me",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/memethetmon/home-search/issues"
+  },
+  "homepage": "https://github.com/memethetmon/home-search#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "neat-csv": "^6.0.1"
+  }
+}

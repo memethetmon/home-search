@@ -1,0 +1,105 @@
+a {
+  text-decoration: none;
+}
+
+.heading {
+  margin: 50px auto;
+}
+
+.green {
+  color: green;
+}
+
+.home {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("http://localhost:3000/images/background.jpeg");
+  background-size: cover;
+}
+
+.home > .center {
+  width: 30%;
+  min-width: 300px;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  display: flex;
+  border-radius: 5px;
+}
+
+.home .center input {
+  width: 100%;
+  border: 3px solid #ccb500;
+  border-right: none;
+  padding: 5px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.home .center button {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccb500;
+  background: #ccb500;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.detail {
+  padding: 15px;
+}
+
+.detail .main-info {
+  margin: auto 12px 0 0;
+}
+
+/************ Collapsible ***********/
+.collapsible {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border-top: 0.3px solid rgb(216, 216, 216);
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: rgb(170, 170, 170);
+  color: white;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: gray;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+  color: white;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+/******** End of Collapsible ********/
